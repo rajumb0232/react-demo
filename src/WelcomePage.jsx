@@ -27,7 +27,7 @@ const WelcomePage = () => {
   }, []);
 
   const handleLogout = async () => {
-    await axios.post('http://localhost:8080/logout', {}, { withCredentials: true });
+    await axios.post(`${BASE_URL}/logout`, {}, { withCredentials: true });
     setUsername(null);
   };
 
