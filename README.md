@@ -1,12 +1,63 @@
-# React + Vite
+# React Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app using Vite, Axios, and TailwindCSS.
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Clone the repo
 
-## Expanding the ESLint configuration
+```bash
+git clone https://github.com/yourusername/react-demo.git
+cd react-demo
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+
+- **For local development**, open `.env` and set the API URL:
+
+    ```env
+    VITE_API_BASE_URL=http://localhost:8080
+    ```
+
+- **For production**, open `.env.production` and set the production API URL:
+
+    ```env
+    VITE_API_BASE_URL=https://api.yourdomain.com
+    ```
+
+### 4. Run the App (Development Mode)
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:3000`.
+
+### 5. Build for Production
+
+```bash
+npm run build
+```
+
+This will automatically use `.env.production` for the production environment variables.
+
+To preview the production build:
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```
+src/                # App source code
+public/             # Public files
+.env                # Local development environment variables
+.env.production     # Production environment variables
+```
