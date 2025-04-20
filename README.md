@@ -7,7 +7,7 @@ A simple React app using Vite, Axios, and TailwindCSS.
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/react-demo.git
+git clone https://github.com/rajumb0232/react-demo.git
 cd react-demo
 ```
 
